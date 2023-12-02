@@ -9,16 +9,20 @@
 
 /*****************external fonts************************************/
 @font-face {
-  src: url(../font/CloudyJune.ttf); 
+  src: url(../font/cloudy.ttf); 
   font-family: cloudy;
 }
 @font-face {
-  src: url(../font/HalloweenYouAndMeRegular.ttf);
+  src: url(../font/halloween.ttf);
   font-family: halloween; 
 }
 @font-face {
-    src: url(../font/Mandala\ Handmade.otf);
-  font-family: mandala;
+    src: url(../font/bakery.ttf);
+  font-family: bakery;
+}
+@font-face {
+    src: url(../font/mango.ttf);
+  font-family: mango;
 }
 *
 { box-sizing: border-box ;}
@@ -33,6 +37,30 @@ body{
   min-height: 100vh; /* Establece el 100% de la altura visible del viewport */
   margin: 0;
 }
+h1{
+  font-family: mango;
+  font-size: 4.5em;
+  width: 90%;
+  padding:3%;
+  margin: 3% auto ;
+  /*border: solid black 2px;*/
+  text-align: center;
+  color: #A43B35;
+}
+h2{
+  font-family: bakery;
+  font-size: 3em;
+  font-weight: lighter;
+  color: #A43B35;
+text-decoration: underline 1.5px;
+}
+h3{
+  font-family: bakery;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #A43B35;
+  text-decoration: underline 1.5px;
+}
 #panqueques{
     width: 90%; /* Establece el ancho de la imagen al 90% del contenedor padre (el body en este caso) */
     height: auto; /* Esto mantiene la proporción original de la imagen */
@@ -42,26 +70,54 @@ body{
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2); /* Establece una sombra */
 }
 blockquote{
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 8px 16px #A43B35;
   width: 60%; /* Ancho del bloque de cita */
-  margin: 0 auto; /* Establece los márgenes automáticos para centrar horizontalmente */
-  
+  padding: 2%;
+  margin:  5% auto 0; /* Establece los márgenes automáticos para centrar horizontalmente */
+  font-family: halloween;
+  font-size: 1.6em;
+  color: rgb(164, 59, 53) ;/*esto es el color de la letra*/
+  background-color: #fbf9e1;
+  border-bottom-right-radius: 10% 30%; /*esto hace que de una misma esquina empieze en un porcentaje difente segun los ejes x e y*/
+  border-top-right-radius: 10% 30%;
+  border-bottom-left-radius: 10% 30%;
+  border-top-left-radius: 10% 30%;
+  border: solid 1px;
+  border-color: #A43B35;
+  text-align: center;
 }
 #wrapper{
 position: relative;
 background-color: #FFFCCF;
 padding: 5%;
 width: 80%;
-
+color: #712f2b;
+font-family: cloudy;
+font-size: 1.5em;
 }
-
+ul {
+  list-style-image: url(../img/batidor.jpg);
+  size: 0.2em;
+}
 
 /**************************************** RESPONSIVIDAD *****************************************/
 
 /********************************** ATENCIÓN: MEDIA QUERY ***************************************/
 
+
+@media only screen and (width<900px) {
+  h1{ font-size: 3.5em;}
+  h2{ font-size: 2.5em; }
+  h3{font-size: 2em;}
+  img{width:75%;}
+}
 @media only screen and (width<700px) {
-        #wrapper {width:95%}                       /*Redefino el ancho del wrapper para el movil*/
-        blockquote {width:70%;}
-        img {width:50%;}
+  h1{font-size: 3em;}
+  h2{font-size: 2em; }
+  h3{font-size: 1.5em;}
+  #wrapper {width:95%}    /*Redefino el ancho del wrapper para el movil*/
+  blockquote {
+    width:70%;
+    font-size: medium;}
+  img{width:50%;}
 }
