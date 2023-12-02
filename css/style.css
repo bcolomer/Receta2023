@@ -25,7 +25,8 @@
 
 body{
   background-image: url(../img/cupcake.jpg);
-  
+  background-size: contain; /* Ajusta la imagen dentro del cuerpo */
+  background-position: center; /* Centra la imagen */
   display: flex; /* Utiliza flexbox para el posicionamiento */
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -37,13 +38,20 @@ body{
     height: auto; /* Esto mantiene la proporción original de la imagen */
     display: block; /* Asegura que la imagen sea un bloque y respete el ancho especificado */
     margin: auto; /* Centra la imagen horizontalmente dentro del contenedor */
-    border-radius: 3%;
+    border-radius: 7%;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2); /* Establece una sombra */
+}
+blockquote{
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 60%; /* Ancho del bloque de cita */
+  margin: 0 auto; /* Establece los márgenes automáticos para centrar horizontalmente */
+  
 }
 #wrapper{
 position: relative;
 background-color: #FFFCCF;
 padding: 5%;
-width: 90%;
+width: 80%;
 
 }
 
