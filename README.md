@@ -1,7 +1,4 @@
 # Receta2023
-El libro de Doña Petrona. Recetas de Arte Culinario.
-Publicado por Petrona C. de Gandulfo, Buenos Aires, 1987 
-
-https://fontmeme.com/fuentes/fuente-halloween-you-and-me/
-https://fontmeme.com/fuentes/fuente-mandala-handmade-etik-fatimah/
-https://fontmeme.com/fuentes/fuente-cloudy-june/
+Receta argentina de panqueques con dulce de leche
+basada en una receta de Doña Petrona C de Gandulfo
+autor: bcolomer
