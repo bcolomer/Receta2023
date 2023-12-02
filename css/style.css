@@ -25,9 +25,26 @@
 
 body{
   background-image: url(../img/cupcake.jpg);
+  
+  display: flex; /* Utiliza flexbox para el posicionamiento */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  min-height: 100vh; /* Establece el 100% de la altura visible del viewport */
+  margin: 0;
+}
+#panqueques{
+    width: 90%; /* Establece el ancho de la imagen al 90% del contenedor padre (el body en este caso) */
+    height: auto; /* Esto mantiene la proporción original de la imagen */
+    display: block; /* Asegura que la imagen sea un bloque y respete el ancho especificado */
+    margin: auto; /* Centra la imagen horizontalmente dentro del contenedor */
+    border-radius: 3%;
 }
 #wrapper{
+position: relative;
 background-color: #FFFCCF;
+padding: 5%;
+width: 90%;
+
 }
 
 
