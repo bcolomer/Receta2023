@@ -1,0 +1,42 @@
+/*******************************************************************/
+/*              Hoja de estilo de Panqueques.html                  */
+/*              Autor: Barbara Colomer                             */
+/*              Version: 1.0                                       */
+/*              fecha: Diciembre 2023                              */
+/*              comentario: trabajo lenguaje en marcas             */
+/*                                                                 */
+/*******************************************************************/
+
+/*****************external fonts************************************/
+@font-face {
+  src: url(../font/CloudyJune.ttf); 
+  font-family: cloudy;
+}
+@font-face {
+  src: url(../font/HalloweenYouAndMeRegular.ttf);
+  font-family: halloween; 
+}
+@font-face {
+    src: url(../font/Mandala\ Handmade.otf);
+  font-family: mandala;
+}
+*
+{ box-sizing: border-box ;}
+
+body{
+  background-image: url(../img/cupcake.jpg);
+}
+#wrapper{
+background-color: #FFFCCF;
+}
+
+
+/**************************************** RESPONSIVIDAD *****************************************/
+
+/********************************** ATENCIÓN: MEDIA QUERY ***************************************/
+
+@media only screen and (width<700px) {
+        #wrapper {width:95%}                       /*Redefino el ancho del wrapper para el movil*/
+        blockquote {width:70%;}
+        img {width:50%;}
+}
