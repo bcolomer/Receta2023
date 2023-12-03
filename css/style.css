@@ -148,6 +148,7 @@ ol{
   border-radius: 5%;
   margin: 5% 5%;
   align-items: center;
+  max-width: 300px;
   
 }
 #puntosFinales {
