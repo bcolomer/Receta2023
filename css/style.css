@@ -89,17 +89,58 @@ blockquote{
 #wrapper{
 position: relative;
 background-color: #FFFCCF;
+margin-top: 10%;
+margin-bottom: 10%;
 padding: 5%;
 width: 80%;
 color: #712f2b;
 font-family: cloudy;
 font-size: 1.5em;
 }
-ul {
-  list-style-image: url(../img/batidor.jpg);
-  size: 0.2em;
+li{
+  padding-bottom: 1.5%;
+}
+.vector-whisk {
+  list-style: none; /* Eliminar los marcadores predeterminados */
+  padding-left: 20px; /* Espacio para el ícono */
 }
 
+.vector-whisk li {
+  position: relative; /* Permitir posicionamiento relativo */
+  padding-left: 30px; /* Espacio adicional para el ícono */
+}
+
+.vector-whisk li:before {
+  content: ""; /* Contenido antes del elemento */
+  background-image: url(../img/whisk.png); /* Ruta a tu archivo SVG */
+  background-size: contain; /* Ajustar tamaño del ícono */
+  background-repeat: no-repeat; /* Evitar repetición */
+  width: 20px; /* Ancho del ícono */
+  height: 20px; /* Altura del ícono */
+  position: absolute; /* Posicionamiento absoluto */
+  left: 0; /* Alinear a la izquierda */
+  top: 50%; /* Alinear verticalmente al centro */
+  transform: translateY(-50%); /* Corregir centrado vertical */
+}
+dl {
+  display: grid;
+  grid-template-columns: auto auto; /* Crea dos columnas, una para <dt> y otra para <dd> */
+  gap: 10px; /* Espacio entre las columnas */
+  
+  
+}
+
+dt {
+  grid-column: 1; /* Coloca los <dt> en la primera columna */
+}
+
+dd {
+  grid-column: 2; /* Coloca los <dd> en la segunda columna */
+}
+p{
+  font-size: larger;
+  text-align: justify;
+}
 /**************************************** RESPONSIVIDAD *****************************************/
 
 /********************************** ATENCIÓN: MEDIA QUERY ***************************************/
