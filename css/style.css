@@ -126,9 +126,7 @@ dl {
   display: grid;
   grid-template-columns: auto auto; /* Crea dos columnas, una para <dt> y otra para <dd> */
   gap: 10px; /* Espacio entre las columnas */
-  
-  
-}
+  }
 
 dt {
   grid-column: 1; /* Coloca los <dt> en la primera columna */
@@ -140,6 +138,20 @@ dd {
 p{
   font-size: larger;
   text-align: justify;
+}
+ol{
+  display: flex;
+  flex-direction: column;
+  
+}
+.gallery{
+  border-radius: 5%;
+  margin: 5% 5%;
+  align-items: center;
+  
+}
+#puntosFinales {
+  list-style: none;
 }
 /**************************************** RESPONSIVIDAD *****************************************/
 
